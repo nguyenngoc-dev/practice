@@ -1,0 +1,44 @@
+<!--Vận dụng biến đối tượng Date để tính tuổi của một người.
+
+Yêu cầu : Cho người dùng nhập vào năm sinh của họ, sau đó hiển thị tuổi tương ứng.-->
+<DOCTYPE! html>
+
+<html>
+
+<head>
+<title>bai tap 3</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+
+
+<script>
+    document.write('<p>write your year of birth in text below</p>');
+document.write('<input type=text id="text" >');
+document.write('<button id="click">click here</button>');
+document.write('<p id=demo></p>');
+var text = document.getElementById('text');
+var click = document.getElementById('click').addEventListener('click',age);
+
+function age()
+{
+var content = document.getElementById('demo');
+
+var d = new Date();
+var yob = text.value;
+var now = d.getFullYear();
+content.innerHTML = 'your age is'  + (now-yob);
+
+
+}
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
