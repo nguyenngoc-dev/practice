@@ -1,0 +1,42 @@
+<!--Tạo một nút nhấn (button) có name là welcome,
+     value là " Welcome ". Một textbox có tên là msg, value = "Welcome to".-->
+     <DOCTYPE! html>
+         <html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<style>
+#click:hover
+{
+background-color:green;
+
+
+
+}
+
+
+</style>
+<body>
+
+    <button id="click">change</button>
+    <input type="text" id="text">
+    <p id="demo"></p>
+<script>
+var click=document.getElementById('click').addEventListener('click',changecontent);
+var text=document.getElementById('text');
+function changecontent()
+{
+var content=document.getElementById('demo');
+content.innerHTML=text.value;
+text.value='';
+
+}
+ 
+</script>
+
+
+</body>
+
+         </html>
