@@ -20,17 +20,25 @@ background-color:green;
 </style>
 <body>
 
-    <button id="click">change</button>
+   <!-- <button id="click">change</button>
     <input type="text" id="text">
-    <p id="demo"></p>
+    <p id="demo"></p>-->
 <script>
+    document.write('<button id="click">' + 'change' + '</button>');
+    document.write('<input type="text" id="text">');
+    document.write('<p id="demo"></p>')
+    
 var click=document.getElementById('click').addEventListener('click',changecontent);
 var text=document.getElementById('text');
 function changecontent()
 {
 var content=document.getElementById('demo');
 content.innerHTML=text.value;
+alert('welcome to Javascript!' + text.value);
 text.value='';
+var d=new Date();
+alert('bây giờ là ' + d.getHours() + 'giờ' + d.getMinutes() + " phút");
+
 
 }
  
