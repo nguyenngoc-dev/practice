@@ -1,0 +1,39 @@
+<!-- Tạo một nút có nhãn là "Open". Khi người dùng click vào nút này thì mở trang https://quantrimang.com/, 
+    trong một cửa sổ mới và dòng nút đó sẽ thay bằng dòng chữ "Trang này đã thăm". -->
+
+
+
+
+
+
+
+<DOCTYPE! html>
+
+<html>
+
+<head>
+<title>bai tap 9</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+<input type="button" id = "click" onclick = " window.open('https://quantrimang.com/')  " value="open">
+<script>
+    var click = document.getElementById('click');
+click.addEventListener('click',change);
+function change()
+{
+
+var content = '<h1>this page was visited</h1>';
+click.outerHTML=content;
+
+}
+
+
+</script>
+
+
+
+
+    </body>
+    </html>
